@@ -13,7 +13,7 @@ function About() {
             <div className="w-full flex flex-col items-center text-center px-4">
 
 
-                <div className="max-w-xl mb-6">
+                <div className="max-w-xl mb-6 pt-2">
                     <h2 className="text-2xl font-semibold mb-2">
                         Bruce Manners Comedy & Juggling and Stuff
                     </h2>
