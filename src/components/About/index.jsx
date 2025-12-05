@@ -18,7 +18,9 @@ function About() {
                         Bruce Manners Comedy & Juggling and Stuff
                     </h2>
                     <p className="text-gray-700 text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio error consectetur, amet debitis nesciunt repudiandae ullam harum deserunt modi. Unde, ullam. Esse officiis, labore iusto quibusdam fugiat praesentium animi.
+                        An entertaining blend of stand-up comedy, audience participation and outrageous stunts.   Based in Houston, Texas, Bruce Manners is available to make your next event a success.
+
+                        Bruce Manners has created a unique entertainment experience. As a featured stage act, Bruce combines stand-up comedy and juggling or “stand up juggling” to create an act suitable for corporate, family, and public markets. As a strolling or “atmosphere” entertainer, Bruce presents world class 3 ball juggling and amazing balance tricks while engaging the crowd in a relaxed and unobtrusive manner. No matter the venue, Bruce Manners is always a crowd favorite.
                     </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 

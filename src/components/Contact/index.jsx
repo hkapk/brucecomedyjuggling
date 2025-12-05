@@ -3,9 +3,9 @@ import Swal from "sweetalert2";
 import { validateEmail } from "../../utils/helpers";
 
 function ContactForm() {
-  const [formState, setFormState] = useState({ name: "", email: "", message: "" });
+  const [formState, setFormState] = useState({ name: "", email: "", phone: "", message: "" });
   const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = formState;
+  const { name, email, phone, message } = formState;
 
   const handleChange = (e) => {
     if (e.target.name === "email") {
@@ -43,7 +43,7 @@ function ContactForm() {
     if (res.success) {
       Swal.fire({ title: "Thank you", text: "Your message has been sent.", icon: "success" });
       event.target.reset();
-      setFormState({ name: "", email: "", message: "" });
+      setFormState({ name: "", email: "", phone: "", message: "" });
     }
   };
 
@@ -56,8 +56,8 @@ function ContactForm() {
         </p>
 
         <form id="contact-form" onSubmit={onSubmit} className="space-y-4">
-          {/* Name */}
-          <div>
+
+          <div className="text-left">
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
               Name
             </label>
@@ -72,8 +72,8 @@ function ContactForm() {
             />
           </div>
 
-          {/* Email */}
-          <div>
+
+          <div className="text-left">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
               Email
             </label>
@@ -87,9 +87,22 @@ function ContactForm() {
               required
             />
           </div>
+          <div className="text-left">
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+              Phone
+            </label>
+            <input
+              type="phone"
+              name="phone"
+              value={phone}
+              onChange={handleChange}
+              onBlur={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+              required
+            />
+          </div>
 
-          {/* Message */}
-          <div>
+          <div className="text-left">
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
               Message
             </label>
