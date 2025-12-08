@@ -10,17 +10,11 @@ function ContactForm() {
   const handleChange = (e) => {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else {
-        setErrorMessage("");
-      }
+      if (!isValid) setErrorMessage("Your email is invalid.");
+      else setErrorMessage("");
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage("");
-      }
+      if (!e.target.value.length) setErrorMessage(`${e.target.name} is required.`);
+      else setErrorMessage("");
     }
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
@@ -48,89 +42,109 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" className="pt-8 md:pt-8 px-4">
-      <div className="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6 md:p-10">
-        <h2 className="text-2xl font-semibold mb-4 text-center">Booking Inquiries</h2>
-        <p className="text-gray-600 mb-6 text-center">
-          Fill out the form below to book Bruce at your next event.
-        </p>
+    <div className="bg-black min-h-screen">
+      <div
+        className="
+          min-h-screen
+          bg-[url('/images/contactImage.png')]
+          bg-no-repeat 
+          bg-cover
+          bg-right
+          md:bg-contain
+          md:bg-center
+          flex 
+          justify-center md:justify-start
+          items-start
+        "
+      >
 
-        <form id="contact-form" onSubmit={onSubmit} className="space-y-4">
+        <div
+          className="
+            bg-black/80
+            md:bg-black
+            p-8 
+            mt-4
+            rounded-lg md:rounded-none
+            md:w-1/2 
+            md:h-full
+            text-white"
+        >
 
-          <div className="text-left">
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={handleChange}
-              onBlur={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
-              required
-            />
-          </div>
+          <form onSubmit={onSubmit} className="space-y-4">
 
+            <div>
+              <label className="block text-sm font-medium mb-1">Name</label>
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={handleChange}
+                onBlur={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+                required
+              />
+            </div>
 
-          <div className="text-left">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              onBlur={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
-              required
-            />
-          </div>
-          <div className="text-left">
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-              Phone
-            </label>
-            <input
-              type="phone"
-              name="phone"
-              value={phone}
-              onChange={handleChange}
-              onBlur={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
-              required
-            />
-          </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Email</label>
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={handleChange}
+                onBlur={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+                required
+              />
+            </div>
 
-          <div className="text-left">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-              Message
-            </label>
-            <textarea
-              name="message"
-              rows="5"
-              value={message}
-              onChange={handleChange}
-              onBlur={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 resize-none"
-              required
-            />
-          </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Phone</label>
+              <input
+                type="phone"
+                name="phone"
+                value={phone}
+                onChange={handleChange}
+                onBlur={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+                required
+              />
+            </div>
 
-          {/* Error Message */}
-          {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
+            <div>
+              <label className="block text-sm font-medium mb-1">Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                value={message}
+                onChange={handleChange}
+                onBlur={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 resize-none"
+                required
+              />
+            </div>
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-black font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-colors"
-          >
-            Submit
-          </button>
-        </form>
+            {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
+
+            <button
+              type="submit"
+              className="w-full bg-white hover:bg-gray-300 text-black font-medium py-2 px-4 rounded-md 
+                focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors"
+            >
+              Submit
+            </button>
+
+          </form>
+        </div>
+
       </div>
-    </section>
+    </div>
   );
 }
 
 export default ContactForm;
+

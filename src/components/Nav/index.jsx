@@ -9,9 +9,7 @@ function Nav({ currentPage, handlePageChange }) {
           fixed top-0 left-0 z-50 bg-white
           pt-2 md:pt-0 md:static
           border-b md:border-none pb-2"
-                aria-label="Main navigation"
-            >
-                {/* container to center + limit width */}
+                aria-label="Main navigation">
                 <div className="max-w-6xl mx-auto px-4">
                     <ul
                         className="
