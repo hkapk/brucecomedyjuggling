@@ -9,7 +9,7 @@ function Photos() {
 
 
                 <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
-                    Photos
+
                 </h1>
 
 
