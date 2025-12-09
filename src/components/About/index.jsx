@@ -1,53 +1,67 @@
 import React from 'react';
 import TAFE from "../../assets/associations-img/TAFE.png";
-import ITFEA from "../../assets/associations-img/lTFEA.png";
-import IFEA from "../../assets/associations-img/IFEA.jpg";
 import NAMEpros from "../../assets/associations-img/NAMEpros.jpg";
+import ijalogo from "../../assets/associations-img/ijalogo.jpg";
 
 function About() {
     return (
-        <section id="about">
-
-
-
-            <div className="w-full flex flex-col items-center text-center px-4">
-
-
-                <div className="max-w-xl mb-6 pt-2">
-                    <h2 className="text-2xl font-semibold mb-2">
-                        Bruce Manners Comedy & Juggling and Stuff
-                    </h2>
-                    <p className="text-gray-700 text-lg">
-                        An entertaining blend of stand-up comedy, audience participation and outrageous stunts.   Based in Houston, Texas, Bruce Manners is available to make your next event a success.
-
-                        Bruce Manners has created a unique entertainment experience. As a featured stage act, Bruce combines stand-up comedy and juggling or “stand up juggling” to create an act suitable for corporate, family, and public markets. As a strolling or “atmosphere” entertainer, Bruce presents world class 3 ball juggling and amazing balance tricks while engaging the crowd in a relaxed and unobtrusive manner. No matter the venue, Bruce Manners is always a crowd favorite.
-                    </p>
-                </div>
-                <div className="grid grid-cols-2 gap-4 
+        <div className="bg-black min-h-screen">
+            <div className="
+            w-screen
+            min-h-screen
+            bg-[url('/images/BallMouthstick.jpeg')]
+         bg-no-repeat 
+          bg-cover
+          md:bg-contain
+          md:bg-center
+          flex 
+          justify-center md:justify-start
+          items-start">
+                <section id="about">
+                    <div className="w-full flex flex-col items-center text-center px-12">
+                        <div className="max-w-xl mb-6 pt-8 text-white">
+                            <h2 className="text-2xl font-semibold pt-4">
+                                Bruce Manners Comedy & Juggling and Stuff
+                            </h2>
+                            <p className="text-white text-lg text-left pt-8">
+                                With a career spanning over 35 years, Bruce Manners has established himself as a master of
+                                comedy and precision in the world of juggling. Renowned for his unique blend of humor, skill,
+                                and showmanship, he has entertained audiences across the country and shared the stage with
+                                legendary acts including Penn & Teller, Leon Redbone, The Righteous Brothers, and The Beach
+                                Boys.</p>
+                            <p className="text-white text-lg text-left pt-8">
+                                What sets Bruce Manners apart is not just his exceptional talent, but his flair for the
+                                unforgettable. He holds the distinct and quirky title of being the world’s first waterskiing
+                                juggler—an innovative and daring feat that exemplifies his commitment to pushing the
+                                boundaries of live performance.</p>
+                            <p className="text-white text-lg text-left pt-8">
+                                Whether he's performing in theaters, festivals, or special events, Bruce Manners brings a timeless
+                                charm and energy to every show. His long-standing dedication to his craft has made him a
+                                favorite among audiences of all ages and a respected figure in the variety arts community.
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-2 pt-8 gap-4 
                                 md:flex md:justify-between">
-                    <div className="w-32 h-28 flex items-center justify-center bg-white">
-                        <a href="">
-                            <img src={TAFE} className="max-w-full max-h-full object-contain" style={{ width: "" }} alt="Texas Fairs" />
-                        </a>
+                            <div className="w-32 h-28 flex items-center justify-center bg-white">
+                                <a href="">
+                                    <img src={TAFE} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="Texas Fairs" />
+                                </a>
+                            </div>
+                            <div className="w-32 h-28 flex items-center justify-center bg-white">
+                                <a href="">
+                                    <img src={ijalogo} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="International Juggling Association" />
+                                </a>
+                            </div>
+                            <div className="w-32 h-28 flex items-center justify-center bg-white">
+                                <a href="">
+                                    <img src={NAMEpros} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="NAME Pros" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="w-32 h-28 flex items-center justify-center bg-white">
-                        <a href="">
-                            <img src={IFEA} className="max-w-full max-h-full object-contain" style={{ width: "" }} alt="International Festivals & Events" />
-                        </a>
-                    </div>
-                    <div className="w-32 h-28 flex items-center justify-center bg-white">
-                        <a href="">
-                            <img src={ITFEA} className="max-w-full max-h-full object-contain" style={{ width: "" }} alt="Texas Festivals and Events" />
-                        </a>
-                    </div>
-                    <div className="w-32 h-28 flex items-center justify-center bg-white">
-                        <a href="">
-                            <img src={NAMEpros} className="max-w-full max-h-full object-contain" style={{ width: "" }} alt="NAME Pros" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
+            </div >
+        </div>
     );
 }
 

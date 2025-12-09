@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import instagram from "../../assets/footer-img/instagram.png";
 import facebook from "../../assets/footer-img/Facebook.png";
 import youtube from "../../assets/footer-img/YouTube.png";
-import BruceLogo from "../../assets/BMlogo.png"
+import BruceLogo from "../../assets/BruceMannersLogo.png"
 
 
 function Footer() {

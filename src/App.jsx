@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
+import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
 import Videos from './components/Videos';
@@ -11,10 +12,13 @@ import ContactForm from './components/Contact';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   //check what value is the currentPage, rendering the value depending on which is current
   const renderPage = () => {
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
     if (currentPage === 'About') {
       return <About />;
     }

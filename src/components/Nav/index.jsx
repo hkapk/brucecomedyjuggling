@@ -22,6 +22,16 @@ function Nav({ currentPage, handlePageChange }) {
                     >
                         <li className="md:flex-initial">
                             <a
+                                href="#Home"
+                                onClick={() => handlePageChange("Home")}
+                                className={currentPage === "Home" ? "nav-link-active" : "nav-link"}
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li className="md:flex-initial">
+                            <a
                                 href="#About"
                                 onClick={() => handlePageChange("About")}
                                 className={currentPage === "About" ? "nav-link-active" : "nav-link"}
