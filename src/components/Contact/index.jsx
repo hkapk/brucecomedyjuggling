@@ -42,15 +42,14 @@ function ContactForm() {
   };
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen w-full">
       <div
         className="
         w-screen
           min-h-screen
-          bg-[url('/images/contactImage.png')]
+          bg-[url('/images/BallMouthstick.jpeg')]
           bg-no-repeat 
           bg-cover
-          bg-right
           md:bg-contain
           md:bg-center
           flex 
@@ -61,20 +60,20 @@ function ContactForm() {
 
         <div
           className="
-            bg-black/80
-            md:bg-black
-            p-8 
+            bg-black/25
+            md:bg-black/25
+            p-18 
             mt-4
             rounded-lg md:rounded-none
             md:w-1/2 
             md:h-full
             text-white"
         >
-
+          <h1 className="px-12">Contact Bruce</h1>
           <form onSubmit={onSubmit} className="space-y-4">
 
-            <div>
-              <label className="block text-sm font-medium mb-1">Name</label>
+            <div className="pt-12">
+              <label className="block text-sm text-left font-medium mb-1">Name</label>
               <input
                 type="text"
                 name="name"
@@ -88,7 +87,7 @@ function ContactForm() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Email</label>
+              <label className="block text-sm text-left font-medium mb-1">Email</label>
               <input
                 type="email"
                 name="email"
@@ -102,7 +101,7 @@ function ContactForm() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Phone</label>
+              <label className="block text-sm text-left font-medium mb-1">Phone</label>
               <input
                 type="phone"
                 name="phone"
@@ -116,7 +115,7 @@ function ContactForm() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Message</label>
+              <label className="block text-sm text-left font-medium mb-1">Message</label>
               <textarea
                 name="message"
                 rows="5"

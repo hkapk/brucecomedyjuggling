@@ -10,13 +10,13 @@ function About() {
             w-screen
             min-h-screen
             bg-[url('/images/BallMouthstick.jpeg')]
-         bg-no-repeat 
-          bg-cover
-          md:bg-contain
-          md:bg-center
-          flex 
-          justify-center md:justify-start
-          items-start">
+            bg-no-repeat 
+            bg-cover
+            md:bg-contain
+            md:bg-center
+            flex 
+            justify-center md:justify-start
+            items-start">
                 <section id="about">
                     <div className="w-full flex flex-col items-center text-center px-12">
                         <div className="max-w-xl mb-6 pt-8 text-white">
