@@ -133,7 +133,7 @@ function ContactForm() {
 
             <button
               type="submit"
-              className="w-full bg-white hover:bg-gray-300 text-black font-medium py-2 px-4 rounded-md 
+              className="w-50% bg-white hover:bg-gray-300 text-black font-medium py-2 px-4 rounded-md 
                 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors"
             >
               Submit
