@@ -45,6 +45,7 @@ function ContactForm() {
     <div className="bg-black min-h-screen">
       <div
         className="
+        w-screen
           min-h-screen
           bg-[url('/images/contactImage.png')]
           bg-no-repeat 
@@ -80,7 +81,7 @@ function ContactForm() {
                 value={name}
                 onChange={handleChange}
                 onBlur={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                className="w-full px-4 py-2 border bg-white/25 border-gray-300 rounded-md 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
                 required
               />
@@ -94,7 +95,7 @@ function ContactForm() {
                 value={email}
                 onChange={handleChange}
                 onBlur={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                className="w-full px-4 py-2 border bg-white/25 border-gray-300 rounded-md 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
                 required
               />
@@ -108,7 +109,7 @@ function ContactForm() {
                 value={phone}
                 onChange={handleChange}
                 onBlur={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                className="w-full px-4 py-2 border bg-white/25 border-gray-300 rounded-md 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
                 required
               />
@@ -122,7 +123,7 @@ function ContactForm() {
                 value={message}
                 onChange={handleChange}
                 onBlur={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md 
+                className="w-full px-4 py-2 border bg-white/25 border-gray-300 rounded-md 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 resize-none"
                 required
               />

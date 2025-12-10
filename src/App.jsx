@@ -4,8 +4,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
-import Videos from './components/Videos';
-import Photos from './components/Photos';
+import Media from './components/Media';
 import Reviews from './components/Reviews';
 import Events from './components/Events';
 import ContactForm from './components/Contact';
@@ -22,12 +21,10 @@ function App() {
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Videos') {
-      return <Videos />;
+    if (currentPage === 'Media') {
+      return <Media />;
     }
-    if (currentPage === 'Photos') {
-      return <Photos />;
-    }
+
     if (currentPage === 'Events') {
       return <Events />;
     }

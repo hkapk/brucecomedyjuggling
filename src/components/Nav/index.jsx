@@ -42,23 +42,15 @@ function Nav({ currentPage, handlePageChange }) {
 
                         <li className="md:flex-initial">
                             <a
-                                href="#Videos"
-                                onClick={() => handlePageChange("Videos")}
-                                className={currentPage === "Videos" ? "nav-link-active" : "nav-link"}
+                                href="#Media"
+                                onClick={() => handlePageChange("Media")}
+                                className={currentPage === "Media" ? "nav-link-active" : "nav-link"}
                             >
-                                Videos
+                                Media
                             </a>
                         </li>
 
-                        <li className="md:flex-initial">
-                            <a
-                                href="#Photos"
-                                onClick={() => handlePageChange("Photos")}
-                                className={currentPage === "Photos" ? "nav-link-active" : "nav-link"}
-                            >
-                                Photos
-                            </a>
-                        </li>
+
 
                         <li className="md:flex-initial">
                             <a
