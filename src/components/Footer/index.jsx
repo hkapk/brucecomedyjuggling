@@ -1,8 +1,5 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import instagram from "../../assets/footer-img/instagram.png";
-import facebook from "../../assets/footer-img/Facebook.png";
-import youtube from "../../assets/footer-img/YouTube.png";
 import BruceLogo from "../../assets/BruceMannersLogo.png"
 
 
@@ -18,7 +15,7 @@ function Footer() {
             <div className="flex justify-evenly max-w-xs mx-auto w-full pt-4">
                 <img src={BruceLogo} style={{ height: "100px" }} alt="Bruce" />
             </div>
-            <p className="pt-4 text-white">Copyright © 2025</p>
+            <p className="pt-4 text-center text-white">Copyright © 2025</p>
         </footer>
     );
 }

@@ -45,16 +45,18 @@ function ContactForm() {
     <div className="bg-black min-h-screen w-full">
       <div
         className="
-        w-screen
-          min-h-screen
-          bg-[url('/images/BallMouthstick.jpeg')]
-          bg-no-repeat 
-          bg-cover
-          md:bg-contain
-          md:bg-center
-          flex 
-          justify-center md:justify-start
-          items-start
+    w-full md:w-screen
+    max-w-none
+    overflow-x-hidden
+    min-h-screen
+    bg-[url('/images/BallMouthstick.jpeg')]
+    bg-no-repeat
+    bg-cover
+    md:bg-contain
+    md:bg-center
+    flex
+    justify-center md:justify-start
+    items-start
         "
       >
 
@@ -132,8 +134,8 @@ function ContactForm() {
 
             <button
               type="submit"
-              className="w-50% bg-white hover:bg-gray-300 text-black font-medium py-2 px-4 rounded-md 
-                focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors"
+              className="mx-auto block bg-white hover:bg-gray-300 text-black font-medium py-2 px-4 rounded-md 
+    focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors"
             >
               Submit
             </button>

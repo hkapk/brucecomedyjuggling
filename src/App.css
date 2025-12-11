@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
 }
 
 .logo {
@@ -12,6 +10,32 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+
+.nav-link-active {
+  padding: 8px;
+  margin: 4px;
+  text-align: center;
+  border-radius: 30%;
+  font-weight: 600;
+  background-color: black;
+}
+
+.nav-link {
+  padding: 8px;
+  margin: 4px;
+}
+
+.mobile-nav-link-active {
+  display: block;
+  padding: 2px 2px;
+  margin-top: 8px;
+}
+
+.mobile-nav-link {
+  margin-top: 8px;
+  padding: 4px 2px;
+  display: block;
 }
 
 .logo:hover {
@@ -36,6 +60,8 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+
+
 }
 
 .card {

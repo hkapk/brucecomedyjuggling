@@ -3,20 +3,21 @@ import { events } from "../../data/events";
 
 function Events() {
     return (
-        <div className="min-h-screen w-full bg-black py-12 px-4
-        bg-[url('/images/BallMouthstick.jpeg')]
-         bg-no-repeat 
-          bg-cover
-          md:bg-contain
-          md:bg-center
-          flex 
-          justify-center md:justify-start
-          items-start">
-            <div className="max-w-6xl mx-auto">
-                <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
-                </h1>
-
-
+        <div className="  min-h-screen
+  w-full md:w-screen
+  max-w-none
+  overflow-x-hidden
+  bg-black
+  py-12 px-4
+  bg-[url('/images/BallMouthstick.jpeg')]
+  bg-no-repeat
+  bg-cover
+  md:bg-contain
+  md:bg-center
+  flex 
+  justify-center md:justify-start
+  items-start">
+            <div className="max-w-6xl mx-auto text-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {events.map((event, index) => (
                         <div

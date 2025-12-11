@@ -12,6 +12,7 @@ function About() {
             bg-[url('/images/BallMouthstick.jpeg')]
             bg-no-repeat 
             bg-cover
+            bg-right
             md:bg-contain
             md:bg-center
             flex 
