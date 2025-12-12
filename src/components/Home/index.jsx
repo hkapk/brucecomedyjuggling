@@ -10,11 +10,12 @@ function Home() {
             bg-no-repeat
             bg-cover
             md:bg-contain
-            md:bg-center
+            md:bg-left
+            bg-slide
             flex 
             justify-center md:justify-start
             items-start">
-                <h1></h1>
+
             </div>
         </div>
 

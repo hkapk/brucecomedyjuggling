@@ -53,7 +53,7 @@ function ContactForm() {
     bg-no-repeat
     bg-cover
     md:bg-contain
-    md:bg-center
+    md:bg-right
     flex
     justify-center md:justify-start
     items-start

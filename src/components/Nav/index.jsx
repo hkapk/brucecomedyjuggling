@@ -1,88 +1,85 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 import BruceLogo from "../../assets/BruceMannersLogo.png";
-
 
 function Nav({ currentPage, handlePageChange }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-400 h-28">
-            <div className="h-16 items-center flex justify-between">
-                <div className="px-14 pt-14 text-white font-bold">
-                    <img src={BruceLogo} style={{ height: "80px" }} alt="Bruce" /></div>
-                {/* desktop view */}
-                <div className="hidden sm:block text-white pt-14 pr-8">
-                    <a href="#Home"
-                        onClick={() => handlePageChange("Home")}
-                        className={currentPage === "Home" ? "nav-link-active" : "nav-link"}>
-                        Home </a>
-                    <a href="#About"
-                        onClick={() => handlePageChange("About")}
-                        className={currentPage === "About" ? "nav-link-active" : "nav-link"}>
-                        About
-                    </a>
-                    <a href="#Media"
-                        onClick={() => handlePageChange("Media")}
-                        className={currentPage === "Media" ? "nav-link-active" : "nav-link"}>
-                        Media
-                    </a>
-                    <a href="#Events"
-                        onClick={() => handlePageChange("Events")}
-                        className={currentPage === "Events" ? "nav-link-active" : "nav-link"}>
-                        Events
-                    </a>
-                    <a href="#Reviews"
-                        onClick={() => handlePageChange("Reviews")}
-                        className={currentPage === "Reviews" ? "nav-link-active" : "nav-link"}>
-                        Reviews
-                    </a>
-                    <a href="#Contact"
-                        onClick={() => handlePageChange("Contact")}
-                        className={currentPage === "Contact" ? "nav-link-active" : "nav-link"}>
-                        Contact
-                    </a>
-                </div>
-                <button className="block sm:hidden px-4 pt-12 text-4xl text-white"
-                    onClick={() => setIsOpen(!isOpen)}><RxHamburgerMenu /></button>
-            </div>
-            {/* Mobile view */}
-            <div className={`${isOpen ? "block" : "hidden"} sm:hidden text-right px-4 space-y"`}>
-                <a href="#Home"
+        <nav className="bg-gray-400 h-24 w-full fixed top-0 left-0 z-50 shadow-lg">
+            <div className="h-full flex items-center justify-between px-6">
+
+                {/* Logo links to Home */}
+                <a
+                    href="#Home"
                     onClick={() => handlePageChange("Home")}
-                    className={currentPage === "Home" ? "mobile-nav-link-active" : "mobile-nav-link"}>
-                    Home
+                >
+                    <img
+                        src={BruceLogo}
+                        alt="Bruce"
+                        className="h-16 hover:opacity-80 transition"
+                    />
                 </a>
-                <a href="#About"
-                    onClick={() => handlePageChange("About")}
-                    className={currentPage === "About" ? "mobile-nav-link-active" : "mobile-nav-link"}>
-                    About
-                </a>
-                <a href="#Media"
-                    onClick={() => handlePageChange("Media")}
-                    className={currentPage === "Media" ? "mobile-nav-link-active" : "mobile-nav-link"}>
-                    Media
-                </a>
-                <a href="#Events"
-                    onClick={() => handlePageChange("Events")}
-                    className={currentPage === "Events" ? "mobile-nav-link-active" : "mobile-nav-link"}>
-                    Events
-                </a>
-                <a href="#Reviews"
-                    onClick={() => handlePageChange("Reviews")}
-                    className={currentPage === "Reviews" ? "mobile-nav-link-active" : "mobile-nav-link"}>
-                    Reviews
-                </a>
-                <a href="#Contact"
-                    onClick={() => handlePageChange("Contact")}
-                    className={currentPage === "Contact" ? "mobile-nav-link-active" : "mobile-nav-link"}>
-                    Contact
-                </a>
+
+                {/* Desktop Nav */}
+                <div className="hidden sm:flex space-x-8 text-white font-semibold">
+                    {["Home", "About", "Media", "Events", "Reviews", "Contact"].map(page => (
+                        <a
+                            key={page}
+                            href={`#${page}`}
+                            onClick={() => handlePageChange(page)}
+                            className={currentPage === page ? "nav-link-active" : "nav-link"}
+                        >
+                            {page}
+                        </a>
+                    ))}
+                </div>
+
+                {/* Mobile Button */}
+                <button
+                    className="sm:hidden text-white text-4xl transition-transform duration-300"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <div className={`${isOpen ? "rotate-180" : ""} transition-transform`}>
+                        {isOpen ? <IoClose /> : <RxHamburgerMenu />}
+                    </div>
+                </button>
+            </div>
+
+            {/* Mobile Dropdown */}
+            <div
+                className={`
+                    ${isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"} 
+                    sm:hidden pb-4
+                    w-2/3 rounded-xl shadow-lg
+                    max-w-md 
+                    overflow-hidden 
+                    transition-all 
+                    duration-300 
+                    bg-gray-900/80 
+                    text-center 
+                    text-white 
+                    space-y-4
+                    mx-auto
+                `}
+            >
+                {["Home", "About", "Media", "Events", "Reviews", "Contact"].map(page => (
+                    <a
+                        key={page}
+                        href={`#${page}`}
+                        onClick={() => {
+                            handlePageChange(page);
+                            setIsOpen(false); // close menu after clicking
+                        }}
+                        className="block text-xl font-semibold hover:text-gray-300"
+                    >
+
+                        {page}
+                    </a>
+                ))}
             </div>
         </nav>
-
-
     );
 }
 

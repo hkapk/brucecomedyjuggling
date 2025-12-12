@@ -3,7 +3,7 @@ import { galleryImages } from '../../data/galleryImages';
 
 function Media() {
     return (
-        <div className="min-h-screen w-full md:w-screen max-w-none overflow-x-hidden py-12 px-4 md:px-8 lg:px-12">
+        <div className="min-h-screen w-full bg-slate-300 md:w-screen max-w-none overflow-x-hidden py-12 px-4 md:px-8 lg:px-12">
             <div className="max-w-7xl mx-auto">
 
                 {/* Video Grid */}

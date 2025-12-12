@@ -14,7 +14,7 @@ function About() {
             bg-cover
             bg-right
             md:bg-contain
-            md:bg-center
+            md:bg-right
             flex 
             justify-center md:justify-start
             items-start">
