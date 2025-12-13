@@ -9,8 +9,6 @@ function Nav({ currentPage, handlePageChange }) {
     return (
         <nav className="bg-gray-400 h-24 w-full fixed top-0 left-0 z-50 shadow-lg">
             <div className="h-full flex items-center justify-between px-6">
-
-                {/* Logo links to Home */}
                 <a
                     href="#Home"
                     onClick={() => handlePageChange("Home")}

@@ -12,7 +12,7 @@ function About() {
             bg-[url('/images/BallMouthstick.jpeg')]
             bg-no-repeat 
             bg-cover
-            bg-right
+            bg-center
             md:bg-contain
             md:bg-right
             flex 
@@ -41,19 +41,19 @@ function About() {
                                 favorite among audiences of all ages and a respected figure in the variety arts community.
                             </p>
                         </div>
-                        <div className="grid grid-cols-2 pt-8 gap-4 
+                        <div className="grid grid-cols-1 pt-8 gap-4 
                                 md:flex md:justify-between">
-                            <div className="w-32 h-28 flex items-center justify-center bg-white">
+                            <div className="w-32 h-28 flex items-center justify-center">
                                 <a href="">
-                                    <img src={TAFE} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="Texas Fairs" />
+                                    <img src={TAFE} className="pb-4 max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="Texas Fairs" />
                                 </a>
                             </div>
-                            <div className="w-32 h-28 flex items-center justify-center bg-white">
+                            <div className="w-32 h-28 flex items-center justify-center">
                                 <a href="">
-                                    <img src={ijalogo} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="International Juggling Association" />
+                                    <img src={ijalogo} className="pb-2 max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="International Juggling Association" />
                                 </a>
                             </div>
-                            <div className="w-32 h-28 flex items-center justify-center bg-white">
+                            <div className="w-32 h-28 flex items-center justify-center">
                                 <a href="">
                                     <img src={NAMEpros} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="NAME Pros" />
                                 </a>

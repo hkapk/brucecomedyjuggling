@@ -71,7 +71,7 @@ function ContactForm() {
             md:h-full
             text-white"
         >
-          <h1 className="px-12">Contact Bruce</h1>
+
           <form onSubmit={onSubmit} className="space-y-4">
 
             <div className="pt-12">

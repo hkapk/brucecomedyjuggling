@@ -40,7 +40,7 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="pt-24 sm:pt-18">
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
 

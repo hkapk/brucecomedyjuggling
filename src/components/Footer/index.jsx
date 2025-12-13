@@ -7,7 +7,7 @@ function Footer() {
     return (
 
         <footer className="w-full py-6 bg-black">
-            <div className="flex justify-evenly max-w-xs mx-auto w-full">
+            <div className="flex justify-evenly max-w-xs mx-auto w-full pt-2 pb-2">
                 <SocialIcon url="https://www.instagram.com/brucemanners" />
                 <SocialIcon url="https://www.facebook.com/ComedyJuggler" />
                 <SocialIcon url="https://www.youtube.com/user/IJuggle5" />
