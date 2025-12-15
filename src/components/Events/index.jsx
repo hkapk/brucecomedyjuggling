@@ -21,7 +21,7 @@ function Events() {
   justify-center md:justify-start
   items-start">
             <div className="max-w-6xl mx-auto text-center">
-                <h1>Upcoming</h1>
+                <h1 className="text-neutral-200 pb-4">Upcoming</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {events.map((event, index) => (
                         <div
@@ -43,9 +43,28 @@ function Events() {
                     ))}
                 </div>
 
+                <h1 className="text-neutral-200 pb-4 pt-4">TV & Film Appearances</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {appearances.map((appearance, index) => (
+                        <div
+                            key={index}
+                            className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
+                        >
 
-                <h1>Past Festivals</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <p className="mt-2 text-gray-700">
+                                <span className="font-medium"></span> {appearance.festival}
+                            </p>
+
+                            <p className="mt-1 text-gray-700">
+                                <span className="font-medium"></span> {appearance.location}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+
+                <h1 className="text-neutral-200 pb-4 pt-4">Past Festivals</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {performances.map((performance, index) => (
                         <div
                             key={index}
@@ -63,24 +82,7 @@ function Events() {
                     ))}
                 </div>
 
-                <h1>TV & Film Appearances</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {appearances.map((appearance, index) => (
-                        <div
-                            key={index}
-                            className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
-                        >
 
-                            <p className="mt-2 text-gray-700">
-                                <span className="font-medium"></span> {appearance.festival}
-                            </p>
-
-                            <p className="mt-1 text-gray-700">
-                                <span className="font-medium"></span> {appearance.location}
-                            </p>
-                        </div>
-                    ))}
-                </div>
 
 
             </div>

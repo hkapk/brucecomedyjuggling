@@ -25,7 +25,9 @@ function Footer() {
                         bgColor="transparent" /></div>
             </div>
             <div className="flex justify-evenly max-w-xs mx-auto w-full pt-4">
-                <img src={BruceLogo} style={{ height: "100px" }} alt="Bruce" />
+                <a href="/">
+                    <img src={BruceLogo} style={{ height: "100px" }} alt="Bruce" />
+                </a>
             </div>
             <p className="pt-4 text-center text-white">Copyright © 2025</p>
         </footer>
