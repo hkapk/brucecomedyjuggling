@@ -24,7 +24,7 @@ function ContactForm() {
     if (errorMessage) return;
 
     const formData = new FormData(event.target);
-    formData.append("access_key", process.env.REACT_APP_ACCESS_KEY);
+    formData.append("access_key", "ecf57a44-8043-4dfc-a82c-f0c95c430593");
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
