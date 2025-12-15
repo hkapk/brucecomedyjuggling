@@ -65,7 +65,7 @@ function Media() {
                             <img
                                 src={src}
                                 alt={`Gallery Image ${index + 1}`}
-                                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                                className="w-full h-64 object-cover object-[30%_20%] hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                     ))}

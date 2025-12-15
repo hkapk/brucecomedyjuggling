@@ -6,11 +6,23 @@ import BruceLogo from "../../assets/BruceMannersLogo.png"
 function Footer() {
     return (
 
-        <footer className="w-full py-6 bg-black">
+        <footer className="w-full py-6 bg-gradient-to-b from-black to-neutral-700">
             <div className="flex justify-evenly max-w-xs mx-auto w-full pt-2 pb-2">
-                <SocialIcon url="https://www.instagram.com/brucemanners" />
-                <SocialIcon url="https://www.facebook.com/ComedyJuggler" />
-                <SocialIcon url="https://www.youtube.com/user/IJuggle5" />
+                <div className="hover:scale-110 transition-transform duration-200">
+                    <SocialIcon url="https://www.instagram.com/brucemanners"
+                        style={{ height: 64, width: 64 }}
+                        fgColor="#f5f5f5"
+                        bgColor="transparent" /></div>
+                <div className="hover:scale-110 transition-transform duration-200">
+                    <SocialIcon url="https://www.facebook.com/ComedyJuggler"
+                        style={{ height: 64, width: 64 }}
+                        fgColor="#f5f5f5"
+                        bgColor="transparent" /></div>
+                <div className="hover:scale-110 transition-transform duration-200">
+                    <SocialIcon url="https://www.youtube.com/user/IJuggle5"
+                        style={{ height: 64, width: 64 }}
+                        fgColor="#f5f5f5"
+                        bgColor="transparent" /></div>
             </div>
             <div className="flex justify-evenly max-w-xs mx-auto w-full pt-4">
                 <img src={BruceLogo} style={{ height: "100px" }} alt="Bruce" />
