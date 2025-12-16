@@ -1,16 +1,29 @@
-# React + Vite
+# BruceManners.com (Official website for Bruce Manners Comedy & Juggling and stuff)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Deployment
 
-Currently, two official plugins are available:
+Here is a link to the deployed site: [BruceManners.com Bruce Manners Comedy, Juggling and Stuff](https://www.brucemanners.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## React Compiler
+This is the official website for Bruce Manners, Comedy & Juggling and Stuff, built with React. This website leverages functional components and conditionally renders tabs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Table of Contents
 
-## Expanding the ESLint configuration
+- [Deployment](#deployment)
+- [Description](#description)
+- [Installation](#installation)
+- [Contributions](#contributions)
+- [Questions](#questions)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+No installation is required to visit the site at the deployment link above.
+
+## Contributions
+
+All contributions made by [Hank Kapka](https://www.github.com/hkapk)
+
+## Questions
+
+Checkout https://www.github.com/hkapk on GitHub or send an email inquiry to hankkapka@gmail.com.
