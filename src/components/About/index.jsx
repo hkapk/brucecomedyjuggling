@@ -20,22 +20,22 @@ function About() {
             items-start">
                 <section id="about">
                     <div className="w-full flex flex-col items-center text-center px-12">
-                        <div className="max-w-xl mb-6 pt-8 text-white">
+                        <div className="max-w-xl mb-6 pt-8 text-neutral-200">
                             <h2 className="text-2xl font-semibold pt-4">
                                 Bruce Manners Comedy & Juggling and Stuff
                             </h2>
-                            <p className="text-white text-lg text-left pt-8">
+                            <p className="text-neutral-200 text-lg text-left pt-8">
                                 With a career spanning over 35 years, Bruce Manners has established himself as a master of
                                 comedy and precision in the world of juggling. Renowned for his unique blend of humor, skill,
                                 and showmanship, he has entertained audiences across the country and shared the stage with
                                 legendary acts including Penn & Teller, Leon Redbone, The Righteous Brothers, and The Beach
                                 Boys.</p>
-                            <p className="text-white text-lg text-left pt-8">
+                            <p className="text-neutral-200 text-lg text-left pt-8">
                                 What sets Bruce Manners apart is not just his exceptional talent, but his flair for the
                                 unforgettable. He holds the distinct and quirky title of being the world’s first waterskiing
                                 juggler—an innovative and daring feat that exemplifies his commitment to pushing the
                                 boundaries of live performance.</p>
-                            <p className="text-white text-lg text-left pt-8">
+                            <p className="text-neutral-200 text-lg text-left pt-8">
                                 Whether he's performing in theaters, festivals, or special events, Bruce Manners brings a timeless
                                 charm and energy to every show. His long-standing dedication to his craft has made him a
                                 favorite among audiences of all ages and a respected figure in the variety arts community.
