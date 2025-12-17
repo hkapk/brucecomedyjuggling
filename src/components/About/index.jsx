@@ -1,10 +1,38 @@
 import React from 'react';
+import { useState, useEffect } from "react";
 import TAFE from "../../assets/associations-img/TAFE.png";
 import NAMEpros from "../../assets/associations-img/NAMEpros.jpg";
 import ijalogo from "../../assets/associations-img/ijalogo.jpg";
+import Lyman1 from "../../assets/boats/Lyman1.jpeg";
+import Lyman2 from "../../assets/boats/Lyman2.jpeg";
+
+
 
 function About() {
+
+    const [lightbox, setLightbox] = useState(null);
+
+    useEffect(() => {
+        if (!lightbox) return;
+
+        const handleKeyDown = (e) => {
+            if (e.key === "Escape") {
+                setLightbox(null);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [lightbox]);
+
+
+
     return (
+
+
         <div className="bg-black min-h-screen">
             <div className="
             w-screen
@@ -62,6 +90,76 @@ function About() {
                     </div>
                 </section>
             </div >
+
+            <hr className="w-full border-t border-neutral-300 my-10" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center text-center px-6 md:px-12 pt-12">
+
+                <p className="md:col-span-2 text-neutral-200 text-lg text-center pt-8">
+                    Bruce and his wife Alice are avid boaters. They have two 1950's era Lyman outboard boats built in Sandusky, Ohio.
+                </p>
+
+                <div className="flex justify-center">
+                    <img
+                        src={Lyman1}
+                        alt="1950s Lyman outboard boat"
+                        className="object-contain rounded-lg pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition"
+                        onClick={() =>
+                            setLightbox({
+                                src: Lyman1,
+                                caption: "1950s Lyman outboard boat – Sandusky, Ohio",
+                            })
+                        }
+                    />
+                </div>
+
+                <div className="flex justify-center">
+                    <img
+                        src={Lyman2}
+                        alt="Classic Lyman boat on the water"
+                        className="object-contain rounded-lg pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition"
+                        onClick={() =>
+                            setLightbox({
+                                src: Lyman2,
+                                caption: "Classic Lyman boat on the water",
+                            })
+                        }
+                    />
+                </div>
+
+
+            </div>
+            {lightbox && (
+                <div
+                    className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+                    onClick={() => setLightbox(null)}
+                >
+                    <div
+                        className="max-w-full max-h-full text-center"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <img
+                            src={lightbox.src}
+                            alt={lightbox.caption}
+                            className="max-w-full max-h-[80vh] rounded-lg shadow-xl mx-auto"
+                        />
+
+                        {/* Caption */}
+                        <p className="mt-4 text-neutral-200 text-sm md:text-base">
+                            {lightbox.caption}
+                        </p>
+                    </div>
+
+                    {/* Close button */}
+                    <button
+                        className="absolute top-6 right-6 text-white text-4xl hover:opacity-80"
+                        onClick={() => setLightbox(null)}
+                        aria-label="Close"
+                    >
+                        ×
+                    </button>
+                </div>
+            )}
+
         </div>
     );
 }

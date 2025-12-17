@@ -1,5 +1,6 @@
 import React from 'react';
 import { galleryImages } from '../../data/galleryImages';
+import Photos from '../Photos';
 
 function Media() {
     return (
@@ -57,8 +58,8 @@ function Media() {
                         ></iframe>
                     </div>
                 </div>
-
-                {/* Gallery Grid */}
+                <Photos />
+                {/* Gallery Grid
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
                     {galleryImages.map((src, index) => (
                         <div key={index} className="overflow-hidden rounded-xl shadow-md">
@@ -69,7 +70,7 @@ function Media() {
                             />
                         </div>
                     ))}
-                </div>
+                </div> */}
 
             </div>
         </div>
