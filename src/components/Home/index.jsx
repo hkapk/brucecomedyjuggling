@@ -11,7 +11,6 @@ function Home() {
             bg-cover
             md:bg-contain
             md:bg-left
-            bg-slide
             flex 
             justify-center md:justify-start
             items-start">

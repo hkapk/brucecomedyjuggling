@@ -91,10 +91,10 @@ function About() {
                 </section>
             </div >
 
-            <hr className="w-full border-t border-neutral-300 my-10" />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center text-center px-6 md:px-12 pt-12">
 
-                <p className="md:col-span-2 text-neutral-200 text-lg text-center pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center text-center px-6 md:px-12 pt-12 bg-slate-400 rounded-t-xl">
+
+                <p className="md:col-span-2 text-neutral-200 text-lg text-center pt-4">
                     Bruce and his wife Alice are avid boaters. They have two 1950's era Lyman outboard boats built in Sandusky, Ohio.
                 </p>
 
@@ -102,11 +102,11 @@ function About() {
                     <img
                         src={Lyman1}
                         alt="1950s Lyman outboard boat"
-                        className="object-contain rounded-lg pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition"
+                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition"
                         onClick={() =>
                             setLightbox({
                                 src: Lyman1,
-                                caption: "1950s Lyman outboard boat – Sandusky, Ohio",
+                                caption: "1950s Lyman outboard boat – Seabrook, TX",
                             })
                         }
                     />
@@ -116,7 +116,7 @@ function About() {
                     <img
                         src={Lyman2}
                         alt="Classic Lyman boat on the water"
-                        className="object-contain rounded-lg pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition"
+                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition pb-4"
                         onClick={() =>
                             setLightbox({
                                 src: Lyman2,

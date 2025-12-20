@@ -8,5 +8,9 @@ import FerrisWheelBike from "../assets/galleryImages/FerrisWheelBike.jpeg";
 import Fire from "../assets/galleryImages/Fire.bmp";
 import Improv from "../assets/galleryImages/Improv.jpeg";
 import Juggler from "../assets/galleryImages/Juggler.jpeg";
+import AmazingStunts from "../assets/galleryImages/AmazingStunts.jpeg";
+import DickensEvents1 from "../assets/galleryImages/DickensEvents1.jpeg";
+import DickensEvents2 from "../assets/galleryImages/DickensEvents2.jpeg";
 
-export const galleryImages = [ Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]
+
+export const galleryImages = [ AmazingStunts, DickensEvents1, DickensEvents2, Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]

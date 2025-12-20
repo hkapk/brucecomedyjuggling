@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { validateEmail } from "../../utils/helpers";
+import { SocialIcon } from "react-social-icons";
+import { FaRegAddressCard } from "react-icons/fa";
+import { FaPhoneVolume } from "react-icons/fa6";
+
+
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: "", email: "", phone: "", message: "" });
@@ -144,6 +149,45 @@ function ContactForm() {
         </div>
 
       </div>
+
+      {/* contact info card */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left text-white py-12 bg-slate-400 rounded-t-2xl">
+
+
+        <div className="flex items-center justify-center md:justify-start gap-4">
+          <SocialIcon
+            url="mailto:bruce@brucemanners.com"
+            fgColor="#ffffff"
+            bgColor="transparent"
+            style={{ height: 48, width: 48 }}
+
+          />
+          <p className="text-sm md:text-base tracking-wide">
+            bruce@brucemanners.com
+          </p>
+        </div>
+
+
+        <div className="flex items-start justify-center md:justify-start gap-4">
+          <FaRegAddressCard className="text-2xl md:text-4xl text-white mt-4" />
+          <div className="text-sm md:text-base leading-relaxed">
+            <p>Comedy & Juggling and Stuff</p>
+            <p>2201 Le Beau Lane</p>
+            <p>Seabrook, TX 77586</p>
+          </div>
+        </div>
+
+
+        <div className="flex items-center justify-center md:justify-start gap-4">
+          <FaPhoneVolume className="text-2xl md:text-4xl text-white" />
+          <p className="text-sm md:text-base tracking-wide">
+            330-714-5869
+          </p>
+        </div>
+
+      </div>
+
+
     </div>
   );
 }
