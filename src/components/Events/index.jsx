@@ -59,22 +59,27 @@ function Events() {
                             </div>
                         ))}
                     </div>
-
-                    {/* TV & Film Appearances */}
-                    <h1 className="text-neutral-200 pb-4 pt-8 font-bold text-2xl">TV & Film Appearances</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {appearances.map((appearance, index) => (
-                            <div
-                                key={index}
-                                className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
-                            >
-                                <p className="mt-2 text-gray-700">{appearance.festival}</p>
-                                <p className="mt-1 text-gray-700">{appearance.location}</p>
-                            </div>
-                        ))}
+                </div>
+            </div>
+            <div className="bg-black">
+                <div className="w-full bg-gray-700 py-12 px-4 rounded-xl">
+                    <div className="max-w-6xl mx-auto text-center">
+                        <h1 className="text-neutral-200 pb-4 font-bold text-2xl">TV & Film Appearances</h1>
+                        <div className="text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed">
+                            {appearances.map((appearance, index) => (
+                                <p key={index} className="mb-2">
+                                    {appearance.festival}<br />
+                                    {appearance.location}
+                                </p>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
+
 
             <div className="bg-black">
                 <div className="w-full bg-slate-400 py-8 rounded-t-2xl px-2">
@@ -88,6 +93,7 @@ function Events() {
                     </div>
                 </div>
             </div>
+
 
         </div>
 
