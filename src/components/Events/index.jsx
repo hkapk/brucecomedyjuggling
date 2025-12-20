@@ -62,7 +62,7 @@ function Events() {
                 </div>
             </div>
             <div className="bg-black">
-                <div className="w-full bg-gray-700 py-12 px-4 rounded-xl">
+                <div className="w-full bg-gray-700 py-12 px-4 rounded-t-2xl">
                     <div className="max-w-6xl mx-auto text-center">
                         <h1 className="text-neutral-200 pb-4 font-bold text-2xl">TV & Film Appearances</h1>
                         <div className="text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed">
@@ -81,7 +81,7 @@ function Events() {
 
 
 
-            <div className="bg-black">
+            <div className="bg-gray-700">
                 <div className="w-full bg-slate-400 py-8 rounded-t-2xl px-2">
                     <div className="max-w-6xl mx-auto text-center">
                         <h1 className="text-neutral-900 font-bold text-2xl pb-4">Fairs, Festivals & Special Events</h1>
