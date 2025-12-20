@@ -38,89 +38,59 @@ function Events() {
 
 
     return (
-        <div className="min-h-screen
-  w-full md:w-screen
-  max-w-none
-  overflow-x-hidden
-  bg-black
-  py-12 px-4
-  bg-[url('/images/BallMouthstick.jpeg')]
-  bg-no-repeat
-  bg-cover
-  md:bg-contain
-  md:bg-center
-  flex 
-  justify-center md:justify-start
-  items-start">
-            <div className="max-w-6xl mx-auto text-center">
-                <h1 className="text-neutral-200 pb-4">Upcoming</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {events.map(event => (
-                        <div
-                            key={event.id}
-                            className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
-                        >
-                            <p className="text-lg font-semibold text-gray-900">
-                                {event.dates}
-                            </p>
+        <div className="min-h-screen w-full overflow-x-hidden">
 
-                            <p className="mt-2 text-gray-700">
-                                <span className="font-medium"></span> {event.venue}
-                            </p>
+            {/* ----------------- UPCOMING + TV ----------------- */}
+            <div
+                className="w-full w-full md:w-screen max-w-none bg-black py-12 px-4 bg-[url('/images/BallMouthstick.jpeg')] bg-no-repeat bg-cover md:bg-contain md:bg-center"
+            >
+                <div className="max-w-6xl mx-auto text-center">
+                    {/* Upcoming */}
+                    <h1 className="text-neutral-200 pb-4">Upcoming</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {events.map(event => (
+                            <div
+                                key={event.id}
+                                className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
+                            >
+                                <p className="text-lg font-semibold text-gray-900">{event.dates}</p>
+                                <p className="mt-2 text-gray-700">{event.venue}</p>
+                                <p className="mt-1 text-gray-700">{event.cityState}</p>
+                            </div>
+                        ))}
+                    </div>
 
-                            <p className="mt-1 text-gray-700">
-                                <span className="font-medium"></span> {event.cityState}
-                            </p>
-                        </div>
-                    ))}
-
-
+                    {/* TV & Film Appearances */}
+                    <h1 className="text-neutral-200 pb-4 pt-8">TV & Film Appearances</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {appearances.map((appearance, index) => (
+                            <div
+                                key={index}
+                                className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
+                            >
+                                <p className="mt-2 text-gray-700">{appearance.festival}</p>
+                                <p className="mt-1 text-gray-700">{appearance.location}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-                <h1 className="text-neutral-200 pb-4 pt-4">TV & Film Appearances</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {appearances.map((appearance, index) => (
-                        <div
-                            key={index}
-                            className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
-                        >
-
-                            <p className="mt-2 text-gray-700">
-                                <span className="font-medium"></span> {appearance.festival}
-                            </p>
-
-                            <p className="mt-1 text-gray-700">
-                                <span className="font-medium"></span> {appearance.location}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-
-
-                <h1 className="text-neutral-200 pb-4 pt-4">Past Festivals</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {performances.map((performance, index) => (
-                        <div
-                            key={index}
-                            className="bg-white/70 shadow-md rounded-xl p-6 flex flex-col justify-between"
-                        >
-
-                            <p className="mt-2 text-gray-700">
-                                <span className="font-medium"></span> {performance.festival}
-                            </p>
-
-                            <p className="mt-1 text-gray-700">
-                                <span className="font-medium"></span> {performance.location}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-
-
-
-
             </div>
+
+            <div className="bg-black">
+                <div className="w-full bg-slate-400 py-12 rounded-t-2xl">
+                    <div className="max-w-6xl mx-auto text-center">
+                        <h1 className="text-neutral-900 pb-4">Fairs, Festivals & Special Events</h1>
+                        <p className="text-gray-900 text-base sm:text-lg md:text-xl leading-relaxed">
+                            {performances
+                                .map(performance => `${performance.festival}, ${performance.location}`)
+                                .join(" | ")}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     );
 }
 
