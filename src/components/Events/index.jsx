@@ -65,12 +65,12 @@ function Events() {
                 <div className="w-full bg-gray-700 py-12 px-4 rounded-t-2xl">
                     <div className="max-w-6xl mx-auto text-center">
                         <h1 className="text-neutral-200 pb-4 font-bold text-2xl">TV & Film Appearances</h1>
-                        <div className="text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed">
+                        <div className="text-gray-200 text-base text-sm md:text-xl leading-relaxed">
                             {appearances.map((appearance, index) => (
-                                <p key={index} className="mb-2">
-                                    {appearance.festival}<br />
-                                    {appearance.location}
+                                <p key={index} className="mb-4">
+                                    {appearance.festival}  <br></br>{appearance.location}
                                 </p>
+
                             ))}
                         </div>
                     </div>
