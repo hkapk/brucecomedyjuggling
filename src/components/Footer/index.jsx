@@ -30,6 +30,7 @@ function Footer() {
                 </a>
             </div>
             <p className="pt-4 text-center text-white">Copyright © 2025</p>
+            <p className="pt-4 text-center font-semibold text-white text-xs"><a href="https://hankkapka.com" target="_blank" rel="noopener noreferrer">Hank Kapka | Web Dev</a></p>
         </footer>
     );
 }
