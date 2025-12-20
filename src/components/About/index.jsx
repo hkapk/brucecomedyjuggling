@@ -102,7 +102,7 @@ function About() {
                     <img
                         src={Lyman1}
                         alt="1950s Lyman outboard boat"
-                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition"
+                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition pb-8"
                         onClick={() =>
                             setLightbox({
                                 src: Lyman1,
@@ -116,7 +116,7 @@ function About() {
                     <img
                         src={Lyman2}
                         alt="Classic Lyman boat on the water"
-                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition pb-4"
+                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition pb-8"
                         onClick={() =>
                             setLightbox({
                                 src: Lyman2,
