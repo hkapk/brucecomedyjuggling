@@ -1,6 +1,6 @@
 {
   "name": "brucecomedyjuggling",
-  "homepage": "https://www.brucemanners.com",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --cname www.brucemanners.com"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
