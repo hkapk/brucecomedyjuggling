@@ -21,7 +21,7 @@ function Photos() {
                         <button
                             key={index}
                             type="button"
-                            className="overflow-hidden rounded-xl shadow-md focus:outline-none object-cover object-[30%_20%]"
+                            className="overflow-hidden rounded-xl shadow-md focus:outline-none object-cover object-[30%_25%]"
                             onClick={() =>
                                 setLightbox({
                                     src,
@@ -32,7 +32,7 @@ function Photos() {
                             <img
                                 src={src}
                                 alt={`Gallery Image ${index + 1}`}
-                                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300 object-cover object-[30%_20%]"
+                                className="w-full h-72 object-cover hover:scale-105 transition-transform duration-300 object-cover object-[30%_30%]"
                             />
                         </button>
                     ))}

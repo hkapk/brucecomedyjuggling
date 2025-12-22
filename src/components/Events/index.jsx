@@ -14,7 +14,7 @@ function Events() {
             try {
                 const q = query(
                     collection(db, "events"),
-                    orderBy("date", "asc") // 👈 SORTS BY TIMESTAMP
+                    orderBy("date", "asc")
                 );
 
                 const snapshot = await getDocs(q);
@@ -40,13 +40,12 @@ function Events() {
     return (
         <div className="min-h-screen w-full overflow-x-hidden">
 
-            {/* ----------------- UPCOMING + TV ----------------- */}
             <div
                 className="w-full w-full md:w-screen max-w-none bg-black py-12 px-4 bg-[url('/images/BallMouthstick.jpeg')] bg-no-repeat bg-cover md:bg-contain md:bg-center"
             >
                 <div className="max-w-6xl mx-auto text-center">
-                    {/* Upcoming */}
-                    <h1 className="text-neutral-200 pb-4 font-bold text-2xl">Upcoming</h1>
+
+                    <h1 className="text-neutral-200 pb-4 font-bold text-2xl">Upcoming Events</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {events.map(event => (
                             <div

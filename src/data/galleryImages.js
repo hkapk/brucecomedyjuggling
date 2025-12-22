@@ -1,5 +1,6 @@
 import ComboTrick from "../assets/galleryImages/ComboTrick.jpeg";
 import BallMouthstick from "../assets/galleryImages/BallMouthstick.jpeg";
+import DailyNews from "../assets/galleryImages/DailyNews.jpeg";
 import BigBike from "../assets/galleryImages/BigBike.jpeg";
 import BikeHat from "../assets/galleryImages/BikeHat.jpeg";
 import BlurBike from "../assets/galleryImages/BlurBike.jpeg";
@@ -13,4 +14,4 @@ import DickensEvents1 from "../assets/galleryImages/DickensEvents1.jpeg";
 import DickensEvents2 from "../assets/galleryImages/DickensEvents2.jpeg";
 
 
-export const galleryImages = [ AmazingStunts, DickensEvents1, DickensEvents2, Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]
+export const galleryImages = [ AmazingStunts, DailyNews, DickensEvents1, DickensEvents2, Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]
