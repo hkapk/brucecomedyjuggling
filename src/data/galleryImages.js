@@ -12,6 +12,9 @@ import Juggler from "../assets/galleryImages/Juggler.jpeg";
 import AmazingStunts from "../assets/galleryImages/AmazingStunts.jpeg";
 import DickensEvents1 from "../assets/galleryImages/DickensEvents1.jpeg";
 import DickensEvents2 from "../assets/galleryImages/DickensEvents2.jpeg";
+import Pirate from "../assets/galleryImages/Pirate.jpeg";
+import Harvey1 from "../assets/galleryImages/Harvey1.jpeg";
+import Harvey2 from "../assets/galleryImages/Harvey2.jpeg";
+import Harvey3 from "../assets/galleryImages/Harvey3.jpeg";
 
-
-export const galleryImages = [ AmazingStunts, DailyNews, DickensEvents1, DickensEvents2, Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]
+export const galleryImages = [ AmazingStunts, Pirate, Harvey1, Harvey2, Harvey3, DailyNews, DickensEvents1, DickensEvents2, Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]
