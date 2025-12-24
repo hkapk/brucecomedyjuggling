@@ -83,7 +83,8 @@ function Events() {
             <div className="bg-gray-700">
                 <div className="w-full bg-slate-400 py-8 rounded-t-2xl px-2">
                     <div className="max-w-6xl mx-auto text-center">
-                        <h1 className="text-neutral-900 font-bold text-2xl pb-4">Fairs, Festivals & Special Events</h1>
+                        <h1 className="text-neutral-900 font-bold text-2xl">Fairs & Festivals</h1>
+                        <h1 className="text-neutral-900 font-bold text-2xl pb-4">and Special Events</h1>
                         <p className="text-gray-900 text-sm  leading-relaxed">
                             {performances
                                 .map(performance => `${performance.festival}, ${performance.location}`)

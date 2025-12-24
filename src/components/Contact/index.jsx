@@ -151,10 +151,10 @@ function ContactForm() {
       </div>
 
       {/* contact info card */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left text-white py-12 bg-slate-400 rounded-t-2xl">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left text-white py-12 bg-slate-400 rounded-t-2xl">
 
 
-        <div className="flex items-center justify-center md:justify-start gap-4">
+        <div className="flex items-center justify-center md:justify-start gap-4 pl-12">
           <SocialIcon
             url="mailto:bruce@brucemanners.com"
             fgColor="#ffffff"
@@ -168,22 +168,16 @@ function ContactForm() {
         </div>
 
 
-        <div className="flex items-start justify-center md:justify-start gap-4">
+        <div className="flex items-start justify-end md:justify-end gap-4 pr-12">
           <FaRegAddressCard className="text-2xl md:text-4xl text-white mt-4" />
           <div className="text-sm md:text-base leading-relaxed">
             <p>Comedy & Juggling and Stuff</p>
-            <p>2201 Le Beau Lane</p>
-            <p>Seabrook, TX 77586</p>
+            <p>Houston, TX</p>
           </div>
         </div>
 
 
-        <div className="flex items-center justify-center md:justify-start gap-4">
-          <FaPhoneVolume className="text-2xl md:text-4xl text-white" />
-          <p className="text-sm md:text-base tracking-wide">
-            330-714-5869
-          </p>
-        </div>
+
 
       </div>
 
