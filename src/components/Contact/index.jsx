@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { validateEmail } from "../../utils/helpers";
 import { SocialIcon } from "react-social-icons";
-import { FaRegAddressCard } from "react-icons/fa";
-import { FaPhoneVolume } from "react-icons/fa6";
-
-
+import { ImLocation } from "react-icons/im";
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: "", email: "", phone: "", message: "" });
@@ -147,40 +144,31 @@ function ContactForm() {
 
           </form>
         </div>
-
       </div>
 
-      {/* contact info card */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left text-white py-12 bg-slate-400 rounded-t-2xl">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center md:place-items-stretch text-center md:text-left text-white py-12 bg-slate-400 rounded-t-2xl">
 
-
-        <div className="flex items-center justify-center md:justify-start gap-4 pl-12">
+        <div className="flex flex-col items-center justify-center gap-2 md:pl-12">
           <SocialIcon
             url="mailto:bruce@brucemanners.com"
             fgColor="#ffffff"
             bgColor="transparent"
             style={{ height: 48, width: 48 }}
-
           />
-          <p className="text-sm md:text-base tracking-wide">
+          <p className="text-sm md:text-base tracking-wide text-center">
             bruce@brucemanners.com
           </p>
         </div>
 
-
-        <div className="flex items-start justify-end md:justify-end gap-4 pr-12">
-          <FaRegAddressCard className="text-2xl md:text-4xl text-white mt-4" />
-          <div className="text-sm md:text-base leading-relaxed">
+        <div className="flex flex-col items-center justify-end gap-2 md:pr-12">
+          <ImLocation className="text-2xl md:text-4xl text-white" />
+          <div className="text-sm md:text-base leading-relaxed text-center">
             <p>Comedy & Juggling and Stuff</p>
             <p>Houston, TX</p>
           </div>
         </div>
 
-
-
-
       </div>
-
 
     </div>
   );

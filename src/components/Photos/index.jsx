@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { galleryImages } from '../../data/galleryImages';
+import { resizedImages } from '../../data/resizedImages';
 
 function Photos() {
     const [lightbox, setLightbox] = useState(null);
@@ -17,14 +18,14 @@ function Photos() {
             <div className="max-w-7xl mx-auto">
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {galleryImages.map((src, index) => (
+                    {resizedImages.map((src, index) => (
                         <button
                             key={index}
                             type="button"
                             className="overflow-hidden rounded-xl shadow-md focus:outline-none object-cover object-[30%_25%]"
                             onClick={() =>
                                 setLightbox({
-                                    src,
+                                    src: galleryImages[index],
                                     caption: ``,
                                 })
                             }

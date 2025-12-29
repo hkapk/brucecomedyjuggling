@@ -35,6 +35,7 @@ function About() {
 
         <div className="bg-black min-h-screen">
             <div className="
+            relative
             w-screen
             min-h-screen
             bg-[url('/images/BallMouthstick.jpeg')]
@@ -46,7 +47,8 @@ function About() {
             flex 
             justify-center md:justify-start
             items-start">
-                <section id="about">
+                <div className="absolute inset-0 bg-black/50 md:bg-black/30"></div>
+                <section id="about" className="relative z-10">
                     <div className="w-full flex flex-col items-center text-center px-12">
                         <div className="max-w-xl mb-6 pt-8 text-neutral-200">
                             <h2 className="text-2xl font-semibold pt-4">
@@ -70,7 +72,7 @@ function About() {
                             </p>
                         </div>
                         <div className="grid grid-cols-1 pt-8 gap-4 
-                                md:flex md:justify-between">
+                                md:flex md:justify-between pb-4">
                             <div className="w-32 h-28 flex items-center justify-center">
                                 <a href="">
                                     <img src={TAFE} className="pb-4 max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="Texas Fairs" />

@@ -1,5 +1,4 @@
 import React from 'react';
-import { galleryImages } from '../../data/galleryImages';
 import Photos from '../Photos';
 
 function Media() {
@@ -59,19 +58,6 @@ function Media() {
                     </div>
                 </div>
                 <Photos />
-                {/* Gallery Grid
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {galleryImages.map((src, index) => (
-                        <div key={index} className="overflow-hidden rounded-xl shadow-md">
-                            <img
-                                src={src}
-                                alt={`Gallery Image ${index + 1}`}
-                                className="w-full h-64 object-cover object-[30%_20%] hover:scale-105 transition-transform duration-300"
-                            />
-                        </div>
-                    ))}
-                </div> */}
-
             </div>
         </div>
     );

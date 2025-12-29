@@ -17,4 +17,24 @@ import Harvey1 from "../assets/galleryImages/Harvey1.jpeg";
 import Harvey2 from "../assets/galleryImages/Harvey2.jpeg";
 import Harvey3 from "../assets/galleryImages/Harvey3.jpeg";
 
-export const galleryImages = [ AmazingStunts, Pirate, Harvey1, Harvey2, Harvey3, DailyNews, DickensEvents1, DickensEvents2, Juggler, Improv, Fire, FerrisWheelBike, ComedyDangerStunt, ComboTrick, BallMouthstick, BigBike, BikeHat, BlurBike,  ]
+export const galleryImages = [ 
+    AmazingStunts, 
+    Pirate, 
+    Harvey1, 
+    Harvey2, 
+    Harvey3, 
+    DailyNews, 
+    DickensEvents1, 
+    DickensEvents2, 
+    Juggler, 
+    Improv, 
+    Fire, 
+    FerrisWheelBike, 
+    ComedyDangerStunt, 
+    ComboTrick, 
+    BallMouthstick, 
+    BigBike, 
+    BikeHat,
+    BlurBike,  ]
+
+    
