@@ -2,7 +2,6 @@ import ComboTrick from "../assets/galleryImages/ComboTrick.jpeg";
 import BallMouthstick from "../assets/galleryImages/BallMouthstick.jpeg";
 import DailyNews from "../assets/galleryImages/DailyNews.jpeg";
 import BigBike from "../assets/galleryImages/BigBike.jpeg";
-import BikeHat from "../assets/galleryImages/BikeHat.jpeg";
 import BlurBike from "../assets/galleryImages/BlurBike.jpeg";
 import ComedyDangerStunt from "../assets/galleryImages/ComedyDangerStunt.jpeg";
 import FerrisWheelBike from "../assets/galleryImages/FerrisWheelBike.jpeg";
@@ -34,7 +33,6 @@ export const galleryImages = [
     ComboTrick, 
     BallMouthstick, 
     BigBike, 
-    BikeHat,
     BlurBike,  ]
 
     
