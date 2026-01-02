@@ -2,7 +2,6 @@ import smallComboTrick from "../assets/resizedImages/ComboTrick.jpg";
 import smallBallMouthstick from "../assets/resizedImages/BallMouthstick.jpg";
 import smallDailyNews from "../assets/resizedImages/DailyNews.jpg";
 import smallBigBike from "../assets/resizedImages/BigBike.jpg";
-import smallBikeHat from "../assets/resizedImages/BikeHat.jpg";
 import smallBlurBike from "../assets/resizedImages/BlurBike.jpg";
 import smallComedyDangerStunt from "../assets/resizedImages/ComedyDangerStunt.jpg";
 import smallFerrisWheelBike from "../assets/resizedImages/FerrisWheelBike.jpg";
@@ -34,5 +33,4 @@ export const resizedImages = [
     smallComboTrick, 
     smallBallMouthstick, 
     smallBigBike, 
-    smallBikeHat,
     smallBlurBike,  ]

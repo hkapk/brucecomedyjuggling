@@ -8,7 +8,7 @@ function Home() {
     md:min-h-screen
     
             w-screen
-            bg-[url('/images/Juggler.jpeg')]
+            bg-[url('/images/Juggler.avif')]
             bg-no-repeat
             bg-cover
             md:bg-contain

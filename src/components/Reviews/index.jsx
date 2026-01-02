@@ -7,7 +7,7 @@ function Reviews() {
   w-full md:w-screen
   max-w-none
   overflow-x-hidden
-  bg-[url('/images/dangerBackground.jpeg')] 
+  bg-[url('/images/dangerBackground.avif')] 
   bg-center /* mobile position */
   bg-cover
   lg:bg-[center_top]

@@ -38,7 +38,7 @@ function About() {
             relative
             w-screen
             min-h-screen
-            bg-[url('/images/BallMouthstick.jpeg')]
+            bg-[url('/images/BallMouthstick.avif')]
             bg-no-repeat 
             bg-cover
             bg-center

@@ -51,7 +51,7 @@ function ContactForm() {
     max-w-none
     overflow-x-hidden
     min-h-screen
-    bg-[url('/images/BallMouthstick.jpeg')]
+    bg-[url('/images/BallMouthstick.avif')]
     bg-no-repeat
     bg-cover
     md:bg-contain
