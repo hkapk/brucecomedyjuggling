@@ -41,7 +41,7 @@ function Events() {
         <div className="min-h-screen w-full overflow-x-hidden">
 
             <div
-                className="w-full w-full md:w-screen max-w-none bg-black py-12 px-4 bg-[url('/images/BallMouthstick.jpeg')] bg-no-repeat bg-cover md:bg-contain md:bg-center"
+                className="w-full w-full md:w-screen max-w-none bg-black py-12 px-4 bg-[url('/images/BallMouthstick.avif')] bg-no-repeat bg-cover md:bg-contain md:bg-center"
             >
                 <div className="max-w-6xl mx-auto text-center">
 
