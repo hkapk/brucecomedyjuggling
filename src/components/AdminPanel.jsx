@@ -16,6 +16,7 @@ function AdminPanel() {
         dates: "",
         venue: "",
         cityState: "",
+        link: "",
     });
 
     const eventsRef = collection(db, "events");
@@ -58,6 +59,7 @@ function AdminPanel() {
             !formData.dates ||
             !formData.venue ||
             !formData.cityState
+
         )
             return;
 
@@ -66,6 +68,7 @@ function AdminPanel() {
             venue: formData.venue,
             cityState: formData.cityState,
             date: Timestamp.fromDate(new Date(formData.date)),
+            ...(formData.link && { link: formData.link }),
         };
 
         const docRef = await addDoc(eventsRef, newEvent);
@@ -84,6 +87,7 @@ function AdminPanel() {
             dates: "",
             venue: "",
             cityState: "",
+            link: "",
         });
     };
 
@@ -141,6 +145,15 @@ function AdminPanel() {
                     value={formData.cityState}
                     onChange={handleChange}
                     required
+                    className="w-full p-2 border rounded"
+                />
+
+                <input
+                    type="text"
+                    name="link"
+                    placeholder="www.brucemanners.com"
+                    value={formData.link}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                 />
 

@@ -55,6 +55,16 @@ function Events() {
                                 <p className="text-lg font-semibold text-gray-900">{event.dates}</p>
                                 <p className="mt-2 text-gray-700">{event.venue}</p>
                                 <p className="mt-1 text-gray-700">{event.cityState}</p>
+                                {event.link && (
+                                    <a
+                                        href={event.link.startsWith("http") ? event.link : `https://${event.link}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-2 text-blue-700 underline"
+                                    >
+                                        Event Website
+                                    </a>
+                                )}
                             </div>
                         ))}
                     </div>

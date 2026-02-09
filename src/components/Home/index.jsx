@@ -32,7 +32,7 @@ function Home() {
   "
                 >
 
-                    <p className="pt-12 text-neutral-100 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-lg mb-6 ">
+                    <p className="pt-12 mt-8 text-neutral-100 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-lg mb-6 ">
                         Premium Entertainment<br className="hidden md:block" /> for All Events
                     </p>
 

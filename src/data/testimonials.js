@@ -1,4 +1,8 @@
 export const testimonials = [
+    {
+    message: "We had the best time! The kids LOVED your performance and you really really kept them engaged.",
+    speaker: "Trinity Classical School",
+  },
   {
     message: "Thank you so much for being a part of the Pasadena Livestock Show & Rodeo this year! Your show is fantastic and loved by those at the rodeo. You have such a wonderful presence and you seem to work non-stop! Every time I looked up I saw you interacting and entertaining kids and adults. You were performing for people standing in line for various things, riding that awesome tricycle, and getting people excited for the show!",
     speaker: "Tina, Pasadena Livestock Show and Rodeo",
