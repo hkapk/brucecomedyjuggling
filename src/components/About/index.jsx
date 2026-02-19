@@ -5,6 +5,8 @@ import NAMEpros from "../../assets/associations-img/NAMEpros.jpg";
 import ijalogo from "../../assets/associations-img/ijalogo.jpg";
 import Lyman1 from "../../assets/boats/Lyman1.jpeg";
 import Lyman2 from "../../assets/boats/Lyman2.jpeg";
+import alice1 from "../../assets/boats/alice_boat_1.jpeg";
+import alice2 from "../../assets/boats/alice_boat_2.jpeg";
 
 
 
@@ -122,6 +124,34 @@ function About() {
                         onClick={() =>
                             setLightbox({
                                 src: Lyman2,
+                                caption: "Classic Lyman boat on the water",
+                            })
+                        }
+                    />
+                </div>
+
+                <div className="flex justify-center">
+                    <img
+                        src={alice1}
+                        alt="2 Classic Lyman boats on trailers"
+                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition pb-8"
+                        onClick={() =>
+                            setLightbox({
+                                src: alice1,
+                                caption: "Classic Lyman boats on trailers",
+                            })
+                        }
+                    />
+                </div>
+
+                <div className="flex justify-center">
+                    <img
+                        src={alice2}
+                        alt="Classic Lyman boat on the water"
+                        className="object-contain rounded-xl pt-4 w-72 md:w-96 cursor-pointer hover:opacity-90 transition pb-8"
+                        onClick={() =>
+                            setLightbox({
+                                src: alice2,
                                 caption: "Classic Lyman boat on the water",
                             })
                         }
