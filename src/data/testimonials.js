@@ -1,4 +1,21 @@
 export const testimonials = [
+      {
+    title: "Amazing entertainment!",
+    message: "Bruce was hired for our corporate event in downtown Houston and did a fantastic job. He arrived on time, was professional, and kept the crowd engaged with his sharp humor and great energy. The team loved his performance, and we received lots of positive feedback. Highly recommend him for any corporate event.",
+    speaker: "Corporate Client",
+  },
+
+      {
+        title: "Team Event Hit!",
+    message: "Bruce was wonderful to work with! Great communicator, showed-up early, stayed late, and his comedic juggling made if fun for kids and adults alike. We loved him and he is very talented!",
+    speaker: "Corporate Client",
+  },
+
+     {
+      title: "A great act!",
+    message: "We hired Bruce as entertainment for our elementary school end of year party. We could not have been happier with his show. He did 3 back to back 45 minute shows for us and the last show had just as much energy and enthusiasm as the first. The kids were amazed by his juggling tricks and the adults enjoyed the performance as well. There were lots of laughs and applause. He showed up early, did all his own set up and was professional and great to work with. If you are looking for great entertainment, I can’t recommend Bruce enough!",
+    speaker: "Kolter Elementary School",
+  },
     {
     message: "We had the best time! The kids LOVED your performance and you really really kept them engaged.",
     speaker: "Trinity Classical School",

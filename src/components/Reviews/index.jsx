@@ -21,6 +21,9 @@ function Reviews() {
                             key={index}
                             className="bg-white/70 shadow-md rounded-2xl p-6 flex flex-col justify-between"
                         >
+                            <p className="text-gray-700 font-bold">
+                                {t.title}
+                            </p>
                             <p className="text-gray-700 italic">
                                 "{t.message}"
                             </p>
