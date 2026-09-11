@@ -1,4 +1,9 @@
 export const testimonials = [
+        {
+    title: "Fantastic!",
+    message: "Bruce Manners is the perfect addition to any event. Not only is his juggling show fantastic, he's engaging and loves to be part of the community experience of our event.",
+    speaker: "Director, Abilene Children’s Art & Literary Festival",
+  },
       {
     title: "Amazing entertainment!",
     message: "Bruce was hired for our corporate event in downtown Houston and did a fantastic job. He arrived on time, was professional, and kept the crowd engaged with his sharp humor and great energy. The team loved his performance, and we received lots of positive feedback. Highly recommend him for any corporate event.",
