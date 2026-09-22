@@ -55,7 +55,7 @@ function Media() {
                         <iframe
                             width="100%"
                             height="500"
-                            src="https://www.youtube.com/embed/UcH3qrruPPw?si=960naiiMiFl5-8m_"
+                            src="https://www.youtube.com/embed/j05erYTydww?si=d6TgJ6GHJxjGM-rW"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
