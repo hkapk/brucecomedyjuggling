@@ -1,3 +1,4 @@
+import NewTrick from "../assets/galleryImages/AmazingNewTrick.jpeg";
 import ComboTrick from "../assets/galleryImages/ComboTrick.jpeg";
 import BallMouthstick from "../assets/galleryImages/BallMouthstick.jpeg";
 import DailyNews from "../assets/galleryImages/DailyNews.jpeg";
@@ -17,6 +18,7 @@ import Harvey2 from "../assets/galleryImages/Harvey2.jpeg";
 import Harvey3 from "../assets/galleryImages/Harvey3.jpeg";
 
 export const galleryImages = [ 
+    NewTrick,
     AmazingStunts, 
     Pirate, 
     Harvey1, 

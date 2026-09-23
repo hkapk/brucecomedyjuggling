@@ -1,3 +1,4 @@
+import smallNewTrick from "../assets/resizedImages/AmazingNewTrick.jpg"
 import smallComboTrick from "../assets/resizedImages/ComboTrick.jpg";
 import smallBallMouthstick from "../assets/resizedImages/BallMouthstick.jpg";
 import smallDailyNews from "../assets/resizedImages/DailyNews.jpg";
@@ -17,6 +18,7 @@ import smallHarvey2 from "../assets/resizedImages/Harvey2.jpg";
 import smallHarvey3 from "../assets/resizedImages/Harvey3.jpg";
 
 export const resizedImages = [ 
+    smallNewTrick,
     smallAmazingStunts, 
     smallPirate, 
     smallHarvey1, 
