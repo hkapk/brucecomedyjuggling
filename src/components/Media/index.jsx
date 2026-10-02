@@ -10,6 +10,19 @@ function Media() {
                     <iframe
                         width="100%"
                         height="500"
+                        src="https://www.youtube.com/embed/l6-M0pzr_0E?si=6Ibntnrz9JwOHqAl"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+
+                <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
+                    <iframe
+                        width="100%"
+                        height="500"
                         src="https://www.youtube.com/embed/12llRs-rCxw?si=nPezkxaEgOANK73D"
                         title="YouTube video player"
                         frameBorder="0"
@@ -26,6 +39,24 @@ function Media() {
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+
+                    <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/jAR4WjWVyIs?si=hcbHp69YjvDIC30f"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+
+                    <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/3Lgref_31hk?si=8VRJ2sYvNYJjfTyl"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
 
                     <div className="p-4 flex justify-center">
                         <iframe

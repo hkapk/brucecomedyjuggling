@@ -2,7 +2,8 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import TAFE from "../../assets/associations-img/TAFE.png";
 import NAMEpros from "../../assets/associations-img/NAMEpros.jpg";
-import ijalogo from "../../assets/associations-img/ijalogo.jpg";
+//import ijalogo from "../../assets/associations-img/ijalogo.jpg";
+import newIJALogo from "../../assets/associations-img/Logo_IJA_1983.jpg";
 import Lyman1 from "../../assets/boats/Lyman1.jpeg";
 import Lyman2 from "../../assets/boats/Lyman2.jpeg";
 import alice1 from "../../assets/boats/alice_boat_1.jpeg";
@@ -76,17 +77,17 @@ function About() {
                         <div className="grid grid-cols-1 pt-8 gap-4 
                                 md:flex md:justify-between pb-4">
                             <div className="w-32 h-28 flex items-center justify-center">
-                                <a href="">
+                                <a href="https://www.texasfairs.com/">
                                     <img src={TAFE} className="pb-4 max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="Texas Fairs" />
                                 </a>
                             </div>
                             <div className="w-32 h-28 flex items-center justify-center">
-                                <a href="">
-                                    <img src={ijalogo} className="pb-2 max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="International Juggling Association" />
+                                <a href="https://www.juggle.org/ ">
+                                    <img src={newIJALogo} className="pb-2 max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="International Juggling Association" />
                                 </a>
                             </div>
                             <div className="w-32 h-28 flex items-center justify-center">
-                                <a href="">
+                                <a href="https://www.nameeventpros.com/">
                                     <img src={NAMEpros} className="max-w-full max-h-full object-contain rounded-lg" style={{ width: "" }} alt="NAME Pros" />
                                 </a>
                             </div>
