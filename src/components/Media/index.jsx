@@ -1,100 +1,57 @@
 import React from 'react';
 import Photos from '../Photos';
 
-function Media() {
+const VIDEOS = [
+    '12llRs-rCxw', // hero
+    'LJJxDXP2VTs', 'yYwnB5cGvSw', // row of 2
+    'jAR4WjWVyIs', '3Lgref_31hk', // row of 2
+    'mcMaRLLwtSI', 'mDUfWppZRwg', 'j05erYTydww', // row of 3
+];
+
+function Video({ id, className = 'aspect-video' }) {
     return (
-        <div className="min-h-screen w-full bg-slate-300 md:w-screen max-w-none overflow-x-hidden py-12 px-4 md:px-8 lg:px-12">
-            <div className="max-w-7xl mx-auto">
+        <div className={`w-full overflow-hidden rounded-lg shadow-md bg-black ${className}`}>
 
-                <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
-                    <iframe
-                        width="100%"
-                        height="500"
-                        src="https://www.youtube.com/embed/l6-M0pzr_0E?si=6Ibntnrz9JwOHqAl"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                    ></iframe>
+            <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${id}`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+            />
+        </div>
+    );
+}
+
+function Media() {
+    const [hero, ...rest] = VIDEOS;
+    const rowA = rest.slice(0, 2);
+    const rowB = rest.slice(2, 4);
+    const rowC = rest.slice(4, 7);
+
+    return (
+        <div className="min-h-screen w-full bg-slate-300 overflow-x-hidden py-12 px-4 md:px-8 lg:px-12">
+            <div className="max-w-7xl mx-auto space-y-8">
+                {/* Hero — full width, 500px tall */}
+                <Video id={hero} className="h-[500px]" />
+
+                {/* Row of 2 */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {rowA.map((id) => <Video key={id} id={id} />)}
                 </div>
 
-                <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
-                    <iframe
-                        width="100%"
-                        height="500"
-                        src="https://www.youtube.com/embed/12llRs-rCxw?si=nPezkxaEgOANK73D"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                    ></iframe>
+                {/* Row of 2 */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {rowB.map((id) => <Video key={id} id={id} />)}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                    <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
-                        <iframe width="100%" height="500"
-                            src="https://www.youtube.com/embed/yYwnB5cGvSw?si=8dOzRUBGEJ50sBGF"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
 
-                    <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
-                        <iframe width="100%" height="500"
-                            src="https://www.youtube.com/embed/jAR4WjWVyIs?si=hcbHp69YjvDIC30f"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
-
-                    <div className="col-span-1 md:col-span-3 p-4 flex justify-center">
-                        <iframe width="100%" height="500"
-                            src="https://www.youtube.com/embed/3Lgref_31hk?si=8VRJ2sYvNYJjfTyl"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
-
-                    <div className="p-4 flex justify-center">
-                        <iframe
-                            width="100%"
-                            height="500"
-                            src="https://www.youtube.com/embed/mcMaRLLwtSI?si=q5pemVVwEkTkld0t"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                    <div className="p-4 flex justify-center">
-                        <iframe
-                            width="100%"
-                            height="500"
-                            src="https://www.youtube.com/embed/mDUfWppZRwg?si=zcbXmorCP_pLYmPw"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                    <div className="p-4 flex justify-center">
-                        <iframe
-                            width="100%"
-                            height="500"
-                            src="https://www.youtube.com/embed/j05erYTydww?si=d6TgJ6GHJxjGM-rW"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
+                {/* Row of 3 */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {rowC.map((id) => <Video key={id} id={id} />)}
                 </div>
+
                 <Photos />
             </div>
         </div>
