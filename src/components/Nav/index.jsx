@@ -19,7 +19,7 @@ function Nav({ currentPage, handlePageChange }) {
                 </div>
 
                 <div className="col-span-2 flex justify-center items-center space-x-8 pt-8 justify-self-end">
-                    {["Home", "About", "Media", "Events", "Reviews", "Contact"].map(page => (
+                    {["Home", "About", "Media", "Events", "Reviews", "Kid Zone", "Contact"].map(page => (
                         <a
                             key={page}
                             href={`#${page}`}
@@ -111,7 +111,7 @@ function Nav({ currentPage, handlePageChange }) {
           mx-auto
         `}
             >
-                {["Home", "About", "Media", "Events", "Reviews", "Contact"].map(page => (
+                {["Home", "About", "Media", "Events", "Reviews", "Kid Zone", "Contact"].map(page => (
                     <a
                         key={page}
                         href={`#${page}`}

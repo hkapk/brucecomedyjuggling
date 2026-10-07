@@ -12,6 +12,7 @@ import ContactForm from "./components/Contact";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import AdminPanel from "./components/AdminPanel";
+import KidZone from "./components/KidZone";
 
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
@@ -36,6 +37,7 @@ function App() {
     if (currentPage === "Events") return <Events />;
     if (currentPage === "Contact") return <ContactForm />;
     if (currentPage === "Reviews") return <Reviews />;
+    if (currentPage === "Kid Zone") return <KidZone />;
   };
 
   const handlePageChange = (page) => {
